@@ -1,13 +1,140 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: black;
+}
+
+nav {
+  background-color: #c04000;
+  padding: 15px 25px;
+}
+
+nav a {
+  margin-left: 30px;
+  color: beige;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 450px) {
+  nav a {
+    margin-left: 5px;
+  }
+  nav {
+    padding: 15px 0;
+  }
+}
+
+nav a:hover {
+  opacity: 0.3;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.counter-container {
+  border: 1px solid white;
+  width: 100%;
+  max-width: 400px;
+  background-color: black;
+  border-radius: 16px;
+  box-shadow: 5px 5px grey;
+}
+
+.count {
+  text-align: center;
+  justify-content: center;
+  padding: 100px;
+  color: beige;
+  font-size: 30px;
+}
+
+.operators {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.operators-two {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+button {
+  display: inline-block;
+  padding: 12px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background-color: #c04000;
+  color: beige;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.operators button {
+  flex: 1 1 33.33%;
+}
+
+.operators-two button {
+  flex: 1 1 33.33%;
+}
+
+.set-count {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: beige;
+  font-size: 16px;
+}
+
+.set-count input {
+  border: 1px solid beige;
+  color: beige;
+  appearance: none;
+  padding: 12px;
+  background: black;
+  width: 50px;
+  border-radius: 20px;
+}
+
+.set-count input:hover {
+  opacity: 0.9;
+}
+
+.set-count button {
+  margin-left: 3px;
+  border-radius: 20px;
+}
+
+.page-not-found {
+  color: beige;
+  text-align: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.error-boundary {
+  color: beige;
+  text-align: center;
+  justify-content: center;
+  padding-top: 100px;
 }
