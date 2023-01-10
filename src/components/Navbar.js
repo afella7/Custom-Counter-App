@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <nav>
-      <NavLink to="/">CustomCounter</NavLink>
-      <NavLink to="/counter">Counter</NavLink>
-      <NavLink to="/errorpage">ErrorPage</NavLink>
+      <NavLink className="links" to="/">CustomCounter</NavLink>
+      <NavLink className="links" to="/counter">Counter</NavLink>
+      <NavLink className="links" to="/errorpage">ErrorPage</NavLink>
     </nav>
   );
 }
